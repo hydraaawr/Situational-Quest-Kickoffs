@@ -13,7 +13,7 @@ Quest Property BQ01 auto
 Event OnLocationChange(Location akOldLoc, Location akNewLoc)
     if(akOldLoc != akNewLoc && !akOldLoc.HasKeyword(LocTypeInn) && !akNewLoc.HasKeyword(LocTypeInn)) ; When is not in an inn to prevent package malfunction/exploiting
         if(!BQ01.IsRunning() || BQ01.GetStage() == 0) ; If BQ01 is not started or completed
-            Debug.Notification("BQ01 is started/completed, rolling for approachability") ;DEBUG
+            Debug.Notification("BQ01 is not started/completed, rolling for approachability") ;DEBUG
             int RollBQ01 = Utility.RandomInt(1,2) ; 50% chance
 
             if RollBQ01 == 1
