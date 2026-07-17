@@ -1,0 +1,29 @@
+FormKey: 0CBA94:Skyrim.esm
+Version2: 1
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__000CBA94
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__000CBA94
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__000CBA94
+      FragmentName: Fragment_0
+Flags:
+  Flags:
+  - SayOnce
+PreviousDialog: 0BD752:Skyrim.esm
+FavorLevel: None
+ResponseData: 0CBA95:Skyrim.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 0BD77F:Skyrim.esm
+    Stage: 10
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsAliasRefConditionData
+    ReferenceAliasIndex: 10
+  ComparisonValue: 1

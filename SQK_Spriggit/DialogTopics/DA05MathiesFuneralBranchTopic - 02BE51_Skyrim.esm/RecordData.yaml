@@ -1,0 +1,9 @@
+FormKey: 02BE51:Skyrim.esm
+EditorID: DA05MathiesFuneralBranchTopic
+Version2: 3
+Name:
+  TargetLanguage: English
+  Value: Who died?
+Branch: 02BE67:Skyrim.esm
+Quest: 02A49A:Skyrim.esm
+SubtypeName: CUST

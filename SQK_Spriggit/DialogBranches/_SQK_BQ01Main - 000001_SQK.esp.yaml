@@ -1,0 +1,7 @@
+FormKey: 000001:SQK.esp
+EditorID: _SQK_BQ01Main
+Quest: 095125:Skyrim.esm
+Category: Player
+Flags:
+- Blocking
+StartingTopic: 000002:SQK.esp

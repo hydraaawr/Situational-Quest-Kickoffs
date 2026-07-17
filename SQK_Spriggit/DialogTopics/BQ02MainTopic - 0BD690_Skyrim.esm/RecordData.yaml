@@ -1,0 +1,10 @@
+FormKey: 0BD690:Skyrim.esm
+EditorID: BQ02MainTopic
+Version2: 5
+Name:
+  TargetLanguage: English
+  Value: I'm looking for work. Got any leads?
+Priority: 60
+Branch: 0BD78A:Skyrim.esm
+Quest: 0BD77F:Skyrim.esm
+SubtypeName: CUST

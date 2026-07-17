@@ -1,0 +1,45 @@
+FormKey: 02BE56:Skyrim.esm
+Version2: 5
+VirtualMachineAdapter:
+  Scripts:
+  - Name: TIF__0002BE56
+  ScriptFragments:
+    MutagenObjectType: ScriptFragments
+    FileName: TIF__0002BE56
+    OnEnd:
+      ExtraBindDataVersion: 1
+      ScriptName: TIF__0002BE56
+      FragmentName: Fragment_0
+Flags: {}
+PreviousDialog: Null
+FavorLevel: None
+Responses:
+- Emotion: Sad
+  EmotionValue: 100
+  ResponseNumber: 1
+  Unknown2: 0x000000
+  Flags:
+  - UseEmotionAnimation
+  Unknown3: 0x000000
+  Text:
+    TargetLanguage: English
+    Value: Our daughter. Our little girl. She hadn't seen her tenth winter.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetIsIDConditionData
+    Object: 01364E:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetStageConditionData
+    Quest: 02A49A:Skyrim.esm
+  ComparisonValue: 10
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetVMQuestVariableConditionData
+    Quest: 02A49A:Skyrim.esm
+    VariableName: ::MathiesToldStory_var

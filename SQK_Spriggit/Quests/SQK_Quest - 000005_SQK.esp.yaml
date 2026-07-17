@@ -1,0 +1,37 @@
+FormKey: 000005:SQK.esp
+EditorID: SQK_Quest
+VirtualMachineAdapter:
+  FileName: ''
+  Aliases:
+  - Property:
+      Name: ''
+      Object: 000005:SQK.esp
+      Alias: 0
+    Scripts:
+    - Name: SQK_randomizer
+      Properties:
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SQK_CanBeApproachedBQ01
+        Object: 000003:SQK.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: _SQK_CanBeApproachedBQ02
+        Object: 000006:SQK.esp
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BQ01
+        Object: 095125:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: BQ02
+        Object: 0BD77F:Skyrim.esm
+      - MutagenObjectType: ScriptObjectProperty
+        Name: LocTypeInn
+        Object: 01CB87:Skyrim.esm
+Flags:
+- StartGameEnabled
+- 0x10
+- RunOnce
+NextAliasID: 1
+Aliases:
+- Name: PlayerAlias
+  Flags: []
+  UniqueActor: 000007:Skyrim.esm
+  VoiceTypes: Null

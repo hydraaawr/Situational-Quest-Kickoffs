@@ -1,0 +1,265 @@
+FormKey: 000D62:SQK.esp
+EditorID: _SQK_BQ01ForceGreet
+Flags:
+- OncePerDay
+Type: Package
+PreferredSpeed: Run
+InteruptFlags:
+- HellosToPlayer
+- RandomConversations
+- ObserveCombatBehavior
+- GreetCorpseBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+- AggroRadiusBehavior
+- AllowIdleChatter
+- WorldInteractions
+- 0x400
+- 0x800
+- 0x1000
+- 0x2000
+- 0x4000
+- 0x8000
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleHour: -1
+ScheduleMinute: -1
+Unknown3: 0x000000
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetStageDoneConditionData
+    Quest: 095125:Skyrim.esm
+    Stage: 10
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetGlobalValueConditionData
+    Global: 000003:SQK.esp
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: LessThan
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+  ComparisonValue: 10
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: LocationHasKeywordConditionData
+    Keyword: 01CB87:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 000C5D:ccBGSSSE001-Fish.esm
+- MutagenObjectType: ConditionFloat
+  Data:
+    MutagenObjectType: GetEquippedConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    ItemOrList: 0E3C16:Skyrim.esm
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornApparelHasKeywordCountConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 06BBD3:Skyrim.esm
+  ComparisonValue: 2
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornApparelHasKeywordCountConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 06BBD2:Skyrim.esm
+  ComparisonValue: 2
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 06D932:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 01E715:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 01E713:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 06D931:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 01E714:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 01E716:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 01E711:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 01E712:Skyrim.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  Flags:
+  - OR
+  Data:
+    MutagenObjectType: WornHasKeywordConditionData
+    RunOnType: Reference
+    Reference: 000014:Skyrim.esm
+    Keyword: 06D930:Skyrim.esm
+  ComparisonValue: 1
+PackageTemplate: 03C1C4:Skyrim.esm
+DataInputVersion: 18
+Data:
+- Key: 7
+  Value:
+    MutagenObjectType: PackageDataTopic
+    Topics:
+    - MutagenObjectType: TopicReference
+      Reference: 000002:SQK.esp
+- Key: 8
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationFallback
+        Type: NearPackageStart
+      Radius: 150
+- Key: 62
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationFallback
+        Type: NearPackageStart
+      Radius: 500
+- Key: 75
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationTarget
+        Link: 000014:Skyrim.esm
+      Radius: 300
+- Key: 79
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 65
+  Value:
+    MutagenObjectType: PackageDataBool
+    Data: True
+- Key: 17
+  Value:
+    MutagenObjectType: PackageDataTarget
+    Type: SingleRef
+    Target:
+      MutagenObjectType: PackageTargetSpecificReference
+      Reference: 000014:Skyrim.esm
+- Key: 22
+  Value:
+    MutagenObjectType: PackageDataLocation
+    Location:
+      Target:
+        MutagenObjectType: LocationTarget
+        Link: 000014:Skyrim.esm
+      Radius: 5000
+- Key: 26
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 40
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 29
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 30
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 31
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 32
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 33
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 34
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 36
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 67
+  Value:
+    MutagenObjectType: PackageDataFloat
+    Data: 50
+- Key: 69
+  Value:
+    MutagenObjectType: PackageDataBool
+- Key: 81
+  Value:
+    MutagenObjectType: PackageDataBool
+XnamMarker: 0x50
+OnBegin:
+  Topics:
+  - MutagenObjectType: TopicReference
+OnEnd:
+  Topics:
+  - MutagenObjectType: TopicReference
+OnChange:
+  Topics:
+  - MutagenObjectType: TopicReference
